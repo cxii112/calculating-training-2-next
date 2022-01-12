@@ -1,0 +1,37 @@
+@import "utils";
+@import "colors";
+
+$primary: $blue-crayola;
+$info: $fuchsia;
+$danger: $red;
+$warning: $sizzling-sunrise;
+$success: $kelly-green;
+$black: $rich-black-fogra-29;
+$dark: $raisin-black;
+$light: $gray-web;
+
+$primary-invert: findColorInvert($primary);
+$info-invert: findColorInvert($info);
+$danger-invert: findColorInvert($danger);
+$warning-invert: findColorInvert($warning);
+$success-invert: findColorInvert($success);
+
+$primary-dark: findDarkColor($primary);
+$info-dark: findDarkColor($info);
+$danger-dark: findDarkColor($danger);
+$warning-dark: findDarkColor($warning);
+$success-dark: findDarkColor($success);
+
+$primary-light: findLightColor($primary);
+$info-light: findLightColor($info);
+$danger-light: findLightColor($danger);
+$warning-light: findLightColor($warning);
+$success-light: findLightColor($success);
+
+//$addColors: (
+//        "green": ($colorGreen, $colorGreenInvert),
+//        "yellow": ($colorYellow, $colorYellowInvert),
+//        "red": ($colorRed, $colorRedInvert),
+//        "grey": ($colorGrey, $colorGreyInvert)
+//);
+//$colors: map-merge($colors, $addColors);
