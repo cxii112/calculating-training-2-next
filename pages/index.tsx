@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-// import '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
     return (
@@ -11,11 +11,12 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main>
-                <span role="button"
-                      className="button is-primary"/>
-                <span role="button"
-                      className="button is-danger"/>
+            <main className={styles.main}>
+                <button className="button is-primary is-outlined"/>
+                <button className="button is-danger is-outlined"/>
+                <button className="button is-success is-outlined"/>
+                <button className="button is-warning is-outlined"/>
+                <button className="button is-info is-outlined"/>
             </main>
 
             <footer>
