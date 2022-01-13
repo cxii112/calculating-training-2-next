@@ -3,8 +3,19 @@
 /*  padding: 0 2rem;*/
 /*}*/
 
+
+.wrapper {
+  width: min(100%, 500px);
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
 .main {
-  min-height: 100vh;
+  height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;

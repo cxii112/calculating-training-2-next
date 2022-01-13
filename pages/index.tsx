@@ -6,21 +6,27 @@ import Bar from "../components/Bar";
 const Home: NextPage = () => {
     const classNames = {
         "main": [
-            "container"],
+            "container"
+        ],
+        "wrapper": [
+            styles.wrapper,
+            "px-5",
+            "px-2"
+        ],
         "tile": [
             "tile",
             "notification",
             "is-dark",
-            "is-align-content-center",
-            "is-justify-content-center",
-            "is-flex"],
-        "button": [
+        ],
+        "mainButton": [
+            "px-6",
             "button",
             "is-primary",
-            "is-rounded"],
+            "is-rounded"
+        ],
     }
     return (
-        <div>
+        <div className={classNames.wrapper.join(" ")}>
             <Head>
                 <title>Тренировка счета 2</title>
                 <meta name="description" content="Приложение для тренировки счета у детей начальной школы"/>
@@ -28,12 +34,11 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={classNames.main.join(" ")}>
-                <div className={classNames.tile.join(" ")}>
-                </div>
+                <div className={classNames.tile.join(" ")}></div>
             </main>
             <Bar>
                 <button type={"button"}
-                        className={classNames.button.join(" ")}>
+                        className={classNames.mainButton.join(" ")}>
                     Начать!
                 </button>
             </Bar>

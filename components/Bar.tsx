@@ -5,11 +5,21 @@ export default function Bar(props: {
     children?: ReactElement
 }) {
     const classNames = {
-        "bar": [styles.bar],
+        "wrapper": [
+            styles.wrapper,
+        ],
+        "bar": [
+            styles.bar,
+            "tile",
+            "notification",
+            "is-dark",
+            "py-3",
+            "is-rounded",
+        ]
     }
     return (
-        <div className={classNames.bar.join(" ")}>
-            {props.children}
+        <div className={classNames.wrapper.join(" ")}>
+            <span className={classNames.bar.join(" ")}>{props.children}</span>
         </div>
     )
 }

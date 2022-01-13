@@ -1,8 +1,21 @@
-.bar {
-  position: absolute;
-  width: 100vw;
-  bottom: 0;
+
+.wrapper {
+  //width: inherit;
+  position: relative;
+  bottom: 20px;
   background-color: transparent;
   display: flex;
+}
+
+.bar {
+  position: relative;
+  display: flex;
   justify-content: space-around;
+  align-content: center;
+
+  .button {
+    text {
+      letter-spacing: min(2vw, 20px);
+    }
+  }
 }
