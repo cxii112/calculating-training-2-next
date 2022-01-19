@@ -1,7 +1,7 @@
-import {ReactElement, ReactNode} from "react";
+import {ReactElement} from "react";
 
 export default function SettingsMember(props: {
-    children?: ReactNode
+    children?: ReactElement
 }) {
     return (
         <div className={"flex justify-between w-full"}>

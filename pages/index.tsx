@@ -2,6 +2,7 @@ import type {NextPage} from "next";
 import Head from "next/head";
 import Bar from "../components/Bar";
 import SumSettings from "../components/SumSettings";
+import OperatorPicker from "../components/OperatorPicker";
 
 const Home: NextPage = () => {
     return (
@@ -13,10 +14,10 @@ const Home: NextPage = () => {
             </Head>
             <div className={"container relative max-w-xl flex flex-col justify-between h-full"}>
                 <main className={"bg-slate-100 h-fit rounded-lg p-4"}>
-                    <div className={"flex justify-evenly text-2xl font-bold text-black"}>
+                    <div className={"flex justify-evenly text-3xl font-bold text-black"}>
                         Настройки
                     </div>
-                    <SumSettings/>
+                    <OperatorPicker/>
                 </main>
                 <Bar>
                     <button
