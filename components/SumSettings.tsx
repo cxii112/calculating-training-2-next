@@ -1,19 +1,33 @@
 import SettingsMember from "./SettingsMember";
 import StyledSwitch from "./StyledSwitch";
 import {OperatorTab, TabOption} from "../interfaces/OperatorTab";
+import SettingsWrapper from "./SettingsWrapper";
 
 export default function SumSettings() {
     return (
-        <>
-            <div className={"flex justify-evenly text-2xl mb-4"}>Сложение</div>
-            <SettingsMember>
+        <SettingsWrapper className={""} title={"Сложение"}>
+            <SettingsMember className={"w-full"}>
                 <StyledSwitch
                     label={"Some label"}
                     defaultState={false}
                     onAction={(state) => {
                     }}/>
             </SettingsMember>
-        </>
+            <SettingsMember className={"w-full"}>
+                <StyledSwitch
+                    label={"Some label"}
+                    defaultState={false}
+                    onAction={(state) => {
+                    }}/>
+            </SettingsMember>
+            <SettingsMember className={"w-full"}>
+                <StyledSwitch
+                    label={"Some label"}
+                    defaultState={false}
+                    onAction={(state) => {
+                    }}/>
+            </SettingsMember>
+        </SettingsWrapper>
     );
 }
 

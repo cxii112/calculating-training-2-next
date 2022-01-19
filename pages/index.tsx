@@ -21,7 +21,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <div className={"container relative max-w-xl flex flex-col justify-between h-full"}>
-                <main className={"bg-slate-100 h-fit rounded-lg p-4"}>
+                <main className={"bg-slate-100 h-fit rounded-lg p-4 space-y-3"}>
                     <div className={"flex justify-evenly text-3xl font-bold text-black pb-2"}>
                         Настройки
                     </div>

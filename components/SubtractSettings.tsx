@@ -1,11 +1,11 @@
 import SettingsMember from "./SettingsMember";
 import StyledSwitch from "./StyledSwitch";
 import {OperatorTab, TabOption} from "../interfaces/OperatorTab";
+import SettingsWrapper from "./SettingsWrapper";
 
 export default function SubtractSettings() {
     return (
-        <>
-            <div className={"flex justify-evenly text-2xl mb-4"}>Вычитание</div>
+        <SettingsWrapper title={"Вычитание"}>
             <SettingsMember>
                 <StyledSwitch
                     label={"Some label"}
@@ -13,7 +13,7 @@ export default function SubtractSettings() {
                     onAction={(state) => {
                     }}/>
             </SettingsMember>
-        </>
+        </SettingsWrapper>
     );
 }
 
