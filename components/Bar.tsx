@@ -1,15 +1,12 @@
 import {ReactElement} from "react";
-import styles from "../styles/Bar.module.scss"
 
 export default function Bar(props: {
     children?: ReactElement
 }) {
     const classNames = {
         "wrapper": [
-            styles.wrapper,
         ],
         "bar": [
-            styles.bar,
             "tile",
             "notification",
             "is-dark",
