@@ -32,7 +32,7 @@ const Home: NextPage = () => {
                 </main>
                 <Bar>
                     <button
-                        className={"text-sky-500 tracking-widest border-2 border-sky-500 rounded-full px-4 py-1 hover:border-green-500 hover:text-green-500 transition-all"}>
+                        className={"text-sky-500 tracking-widest border-2 border-sky-500 rounded-full px-4 py-1 hover:border-success-500 hover:text-green-500 transition-all"}>
                         Начать
                     </button>
                 </Bar>
