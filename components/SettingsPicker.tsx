@@ -1,18 +1,19 @@
 import {OperatorTab} from "../interfaces/OperatorTab";
 import {Tab} from "@headlessui/react";
 
-export default function OperatorPicker(props:{
-    operators:OperatorTab[]
+export default function SettingsPicker(props: {
+    operators: OperatorTab[],
 }) {
     return (
         <>
-            <Tab.List>
+            <Tab.Panels>
                 {props.operators.map((tab) => (
-                    <Tab
+                    <Tab.Panel
                         key={tab.id}>
-                        {tab.icon}</Tab>
+                        {tab.view}
+                    </Tab.Panel>
                 ))}
-            </Tab.List>
+            </Tab.Panels>
         </>
     );
 }

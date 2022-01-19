@@ -1,10 +1,18 @@
 import type {NextPage} from "next";
 import Head from "next/head";
 import Bar from "../components/Bar";
-import SumSettings from "../components/SumSettings";
+import {SumTab} from "../components/SumSettings";
 import OperatorPicker from "../components/OperatorPicker";
+import {Tab} from "@headlessui/react";
+import {OperatorTab} from "../interfaces/OperatorTab";
+import {SubtractTab} from "../components/SubtractSettings";
+import SettingsPicker from "../components/SettingsPicker";
 
 const Home: NextPage = () => {
+    const operators: OperatorTab[] = [
+        SumTab,
+        SubtractTab,
+    ];
     return (
         <div className={"w-screen h-screen bg-slate-200 px-4 py-4 flex justify-evenly"}>
             <Head>
@@ -17,7 +25,10 @@ const Home: NextPage = () => {
                     <div className={"flex justify-evenly text-3xl font-bold text-black"}>
                         Настройки
                     </div>
-                    <OperatorPicker/>
+                    <Tab.Group>
+                        <OperatorPicker operators={operators}/>
+                        <SettingsPicker operators={operators} />
+                    </Tab.Group>
                 </main>
                 <Bar>
                     <button
