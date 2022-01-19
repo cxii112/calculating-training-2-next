@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import styles from '../styles/Bar.module.scss'
+import styles from "../styles/Bar.module.scss"
 
 export default function Bar(props: {
     children?: ReactElement
