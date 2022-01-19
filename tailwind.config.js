@@ -1,11 +1,47 @@
 module.exports = {
     mode: "jit",
-    content: [
-        "./pages/**/*.{js,ts,jsx,tsx}",
-        "./components/**/*.{js,ts,jsx,tsx}",
-    ],
+    content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}",],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                "success": {
+                    50: "#eeffe5",
+                    100: "#cbffb3",
+                    200: "#a8ff80",
+                    300: "#85ff4d",
+                    400: "#62ff1a",
+                    500: "#49e600",
+                    600: "#39b300",
+                    700: "#288000",
+                    800: "#184d00",
+                    900: "#081a00",
+                },
+                "warning": {
+                    50: "#fffde5",
+                    100: "#fff9b3",
+                    200: "#fff580",
+                    300: "#fff04d",
+                    400: "#ffec1a",
+                    500: "#e6d300",
+                    600: "#b3a400",
+                    700: "#807500",
+                    800: "#4d4600",
+                    900: "#1a1700",
+                },
+                "danger": {
+                    50: "#ffebe5",
+                    100: "#ffc3b3",
+                    200: "#ff9b80",
+                    300: "#ff724d",
+                    400: "#ff4a1a",
+                    500: "#e63100",
+                    600: "#b32600",
+                    700: "#801b00",
+                    800: "#4d1000",
+                    900: "#1a0500",
+                },
+            },
+        },
     },
     plugins: [],
 }
