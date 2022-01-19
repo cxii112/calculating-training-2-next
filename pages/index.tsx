@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             </Head>
             <div className={"container relative max-w-xl flex flex-col justify-between h-full"}>
                 <main className={"bg-slate-100 h-fit rounded-lg p-4"}>
-                    <div className={"flex justify-evenly text-3xl font-bold text-black"}>
+                    <div className={"flex justify-evenly text-3xl font-bold text-black pb-2"}>
                         Настройки
                     </div>
                     <Tab.Group>
