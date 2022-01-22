@@ -7,11 +7,15 @@ import {Tab} from "@headlessui/react";
 import {OperatorTab} from "../interfaces/OperatorTab";
 import {SubtractTab} from "../components/SubtractSettings";
 import SettingsPicker from "../components/SettingsPicker";
+import {MultiplyTab} from "../components/MultiplySetting";
+import {DivideTab} from "../components/DivideSettings";
 
 const Home: NextPage = () => {
     const operators: OperatorTab[] = [
         SumTab,
         SubtractTab,
+        MultiplyTab,
+        DivideTab
     ];
     return (
         <div className={"w-screen h-screen bg-slate-200 px-4 py-4 flex justify-evenly"}>
