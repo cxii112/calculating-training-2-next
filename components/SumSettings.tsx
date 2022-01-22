@@ -5,13 +5,9 @@ import SettingsWrapper from "./SettingsWrapper";
 
 export default function SumSettings() {
     return (
-        <SettingsWrapper className={""} title={"Сложение"}>
+        <SettingsWrapper className={""} title={SumTab.title}>
             <SettingsMember className={"w-full"}>
-                <StyledSwitch
-                    label={"Some label"}
-                    defaultState={false}
-                    onAction={(state) => {
-                    }}/>
+
             </SettingsMember>
             <SettingsMember className={"w-full"}>
                 <StyledSwitch
